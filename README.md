@@ -10,3 +10,7 @@ BEM
 Block = header-position
 Element header-postion__
 Modifiyer  = header-position--
+
+Be carefull with the use of the atomic selectors as they will apply to the global scope of the inital media quirey and will have to be overwritten 
+
+The layout of the page has to be done in index.html. In the index.html file create place holders for the pug includes files. this is also where the reponsive flexbox action takes place. 
