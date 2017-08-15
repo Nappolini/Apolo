@@ -1,3 +1,5 @@
+// styles from 0px - 799px 
+
 .page-wrapper{
     display: flex;
     min-height: 100vh;
@@ -6,7 +8,6 @@
 
 .nav-header{
     display: flex;
-
     flex-basis: 100%; 
 }
 
@@ -14,6 +15,7 @@
     flex-basis: 100%;
 }
 
+// styles for 800px and up 
 @media (min-width: 800px){
     .page-wrapper{
         flex-direction: row;
@@ -29,33 +31,3 @@ h1{
 }
 
 
-// .page-wrapper{
-//     height: 900px;
-//     width: 100%;
-//     @include grid-container(); 
-//     @include grid-visual;
-//     @include grid-collapse;
-   
-// }
-
-
-// .nav-header{
- 
-// }
-
-
-// @media (min-width: 800px){
-
-//     .page-wrapper{
-//         width: 100%;
-//         display: flex;
-//         flex-direction: column;
-//         flex-wrap: wrap;
-//     }
-//     .nav-header{
-//         width: 135px;
-//         flex-grow: 1;
-//         display: flex;
-//         flex-direction: column;  
-//     }
-// }
