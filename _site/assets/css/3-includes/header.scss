@@ -26,7 +26,7 @@
 .mobile-nav-toggle {
     padding-top: 25px;
     padding-bottom: 25px;
-    
+    margin-right: 10px;
     width: 50px; 
     height: 100%; 
     cursor: pointer;
@@ -95,9 +95,9 @@
     
     .header{
         position: fixed;
-        width: 8%;
+        flex-basis: 10%;
+        width: 9.075%;
         flex-direction: column;  
-        background-color: pink;
     }
 
     .logo{
@@ -135,8 +135,6 @@
         height: 50px;
         border-bottom: .5px solid #333; 
         width: 100%;
-        background-color: pink;
-        overflow: hidden;
     }
 }
 
