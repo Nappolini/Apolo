@@ -1,129 +1,157 @@
+.mb20{
+    margin-bottom: 20px;
+}
+// Styles that will be applied from 0 - 799px
+// remove the following from mobile view
+.vert-text, 
+.social, 
+.head-line, 
+.site-nav{
+    display: none;
+}
 
-// Styles that will be applied from 0 - 799px 
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%; 
+}
 
+ .logo{
+    margin-left: 15px;
+     justify-content: flex-end;
+     flex-basis: 85%;     
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .side-bar{
-//     width: 100%;  
-//     background-color: white;
- 
-// }
-
-// .logo{
-//     width: 50%; 
-//     margin-left: 35px;
-// }
-// .nav{
-//     width: 50%; 
-// }
-
-//  .mobile-nav-toggle {
-//     margin-right: 35px; 
-//     justify-content: center;
-//     align-items: center;
-//     width: 50px; 
-//     height: 100%; 
+.mobile-nav-toggle {
+    padding-top: 25px;
+    padding-bottom: 25px;
     
+    width: 50px; 
+    height: 100%; 
+    cursor: pointer;
+
+    span, 
+    span:before, 
+    span:after{
+        content: ""; 
+        display: block;
+        height: 2px; 
+        background-color: #333;
+        position: relative; 
+        transition: all ease-in-out;
+    }
+
+    span{
+        width: 100%;
+    }
+    span:before{
+        top: 10px;
+        width: 75%;
+        left: 12.5%;
+    }
+
+    span:after{
+        bottom: 12px; 
+        width: 75%;
+        left: 12.5%;
+    }
+
+    &.is-open span{
+        background-color: transparent; 
+    }
+
+    &.is-open span:before, 
+    &.is-open span:after{
+        transform-origin: center; 
+        transform: rotate(45deg);
+        top: 0; 
+    }
+
+    &.is-open span:after{
+        transform: rotate(-45deg);
+    }
+}
+
+
+.mobile-nav{
+    background-color: white;
+    margin: 0; 
+    position: absolute;
+    width: 100%;
+    padding: 15px; 
+    transform: translateY(-100%);
+    transform: all 0.3s ease-in-out;
     
 
-//     span, 
-//     span:before, 
-//     span:after{
-//         content: ""; 
-//         display: block;
-//         height: 2px; 
-//         background-color: #333;
-//         position: relative
-//     }
-
-//     span{
-//         width: 100%;
-//     }
-//     span:before{
-//         top: 10px;
-//         width: 75%;
-//         left: 12.5%;
-//     }
-
-//     span:after{
-//         bottom: 12px; 
-//         width: 75%;
-//         left: 12.5%;
-//     }
-// }
+    li{
+        padding-top: 10px;
+    }
+}
 
 
 
-// // Styles that will be applied 800px and up 
-// @media (min-width: 800px){
-//     .side-bar{
-//         width: 135px;
-//         display: flex;
-//         flex-direction: column;
-//         flex-grow: 1;
-//     }
-// }
 
-// .header-wrapper{
-//     width: 125px; 
-//     padding: 30px 0; 
-// }
+// styles from 800px and up 
+@media (min-width: 799px){
     
-// .header-position{
-//     width: 125px; 
-// }
+    .header{
+        flex-direction: column;  
+        position: fixed;
+        width: 135px;
+    }
+
+    .logo{
+        margin-top: 15px;
+        flex-basis: 5%;
+    }
+
+   
+
+    .vert-text, 
+    .social, 
+    .head-line{
+        display: block;
+    }
+
+
+    .vert-text{
+        margin-bottom: 110px;
+        transform: rotate(-90deg);  
+        margin-top: 100px; 
+    }
+
+    .vert-min{
+        margin-top: -15px;
+    }
+
+    .social{
+         margin-bottom: 20px;
+    }
+
+    .head-line{
+        border-bottom: 2px solid #333;
+        height: 25px; 
+        width: 100%; 
+    }    
+}
 
 
 
 
-// .vert-text{
-//     transform: rotate(-90deg);  
-//     margin-top: 100px; 
-// }
-
-// .search-icon{
-//     margin-top: 100px;
-// }  
-
-// .h-bar{
-//     margin-top: 7px;
-//     width: 100%;
-//     height: 25px;     
-// }
 
 
-//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

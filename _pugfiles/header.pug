@@ -1,22 +1,54 @@
-h1 This is the start of the header 
 
 
-
-//- .header-wrapper.txt-c.white
-//-     .fixed.txt-c.header-position
-//-         h1.w-auto AP
-
-//-         nav.site-nav.media-m-none
-//-             ul.list-sn.txt-c
-//-                 li.m20: a( href="#") F
-//-                 li.m20: a( href="#") T
-//-                 li.m20: a( href="#") IN
-
-//-         h3.vert-text APOLLO
+//- .mobile-nav.is-open
+//-     +nav-content
+    
+//- .header 
+//-     .header-postition
+//-         h1.logo.txt-c AP
         
-//-         .search-icon
-//-             h3 S
+        nav.social
+            ul.txt-c
+                li: a(href="#") F
+                li: a(href="#") T
+                li: a(href="#") IN
 
-//-         hr.h-bar
+        nav.site-nav
+          +nav-content
 
-//-         .mobile-nav-toggle: span
+        h3.vert-text APOLLO
+        
+
+        hr.head-line
+
+        .mobile-nav-toggle: span
+
+
+mixin nav-content()
+    ul.txt-c
+        li: a(href="#") Home
+        li: a(href="#") About
+         li: a(href="#") Portfolio
+          li: a(href="#") Blog
+        li: a(href="#") Contact
+
+.header
+    
+    h1.logo AP
+
+    nav.social
+        ul.txt-c
+            li: a(href="#") F
+            li: a(href="#") T
+            li: a(href="#") IN
+
+    h5.vert-text Photography 
+
+    h5.vert-text.vert-min APOLLO 
+
+    nav.site-nav
+        +nav-content
+
+    .head-line.mb20
+
+    .mobile-nav-toggle: span

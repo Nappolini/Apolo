@@ -14,3 +14,7 @@ Modifiyer  = header-position--
 Be carefull with the use of the atomic selectors as they will apply to the global scope of the inital media quirey and will have to be overwritten 
 
 The layout of the page has to be done in index.html. In the index.html file create place holders for the pug includes files. this is also where the reponsive flexbox action takes place. 
+
+## How to develop a website with a templating lang 
+
+The first step is to create the layout using index.html. Block out all the content to indicate where components will go and build the reponsive functionality. 
