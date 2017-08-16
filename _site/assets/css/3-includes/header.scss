@@ -11,6 +11,7 @@
 }
 
 .header{
+   
     display: flex;
     align-items: center;
     width: 100%; 
@@ -89,23 +90,20 @@
 }
 
 
-
-
 // styles from 800px and up 
 @media (min-width: 799px){
     
     .header{
-        flex-direction: column;  
         position: fixed;
-        width: 135px;
+        width: 8%;
+        flex-direction: column;  
+        background-color: pink;
     }
 
     .logo{
         margin-top: 15px;
         flex-basis: 5%;
     }
-
-   
 
     .vert-text, 
     .social, 
@@ -125,14 +123,21 @@
     }
 
     .social{
-         margin-bottom: 20px;
+        margin-top: 15px;
+         margin-bottom: 80px;
     }
 
+    .mobile-nav-toggle{
+        margin-top: 75px;
+    }      
+
     .head-line{
-        border-bottom: 2px solid #333;
-        height: 25px; 
-        width: 100%; 
-    }    
+        height: 50px;
+        border-bottom: .5px solid #333; 
+        width: 100%;
+        background-color: pink;
+        overflow: hidden;
+    }
 }
 
 

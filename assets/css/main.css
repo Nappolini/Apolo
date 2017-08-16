@@ -641,8 +641,8 @@ h1 {
     -ms-flex-direction: row;
         flex-direction: row; }
   .nav-header {
-    -ms-flex-preferred-size: 135px;
-        flex-basis: 135px; }
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%; }
   .main-body {
     display: -ms-flexbox;
     display: flex;
@@ -650,8 +650,8 @@ h1 {
         flex-wrap: wrap;
     height: 2000px; }
   .col-1 {
-    -ms-flex-preferred-size: 33.333%;
-        flex-basis: 33.333%;
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
     height: 1750px; }
   .col-4 {
     -ms-flex-preferred-size: 100%;
@@ -665,8 +665,8 @@ h1 {
     -ms-flex-direction: row;
         flex-direction: row; }
   .nav-header {
-    -ms-flex-preferred-size: 135px;
-        flex-basis: 135px; }
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%; }
   .main-body {
     display: -ms-flexbox;
     display: flex;
@@ -710,6 +710,7 @@ h1 {
 .mobile-nav-toggle {
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-right: 10px;
   width: 50px;
   height: 100%;
   cursor: pointer; }
@@ -761,7 +762,9 @@ h1 {
 @media (min-width: 799px) {
   .header {
     position: fixed;
-    width: 120px;
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+    width: 9.075%;
     -ms-flex-direction: column;
         flex-direction: column; }
   .logo {
@@ -783,7 +786,11 @@ h1 {
     margin-top: 15px;
     margin-bottom: 80px; }
   .mobile-nav-toggle {
-    margin-top: 75px; } }
+    margin-top: 75px; }
+  .head-line {
+    height: 50px;
+    border-bottom: .5px solid #333;
+    width: 100%; } }
 
 .flex {
   display: -ms-flexbox;
