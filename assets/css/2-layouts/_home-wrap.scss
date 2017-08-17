@@ -35,7 +35,7 @@ h1{
     
     .col-1{
         flex-basis: 50%;  
-        height: 750px;   
+        height: 2700px;   
     }
 
     .col-4{
@@ -60,12 +60,12 @@ h1{
      .main-body{
         display: flex;
         flex-wrap: wrap;
-        height: 2000px; 
+        height: 2950px; 
     }
     
     .col-1{
         flex-basis: 33.33%;
-        height: 1750px;   
+        height:2700px;   
     }
 
     .col-4{
@@ -80,8 +80,8 @@ h1{
 
 
 // 4 column 
-// styles for 1200px and up 
-@media (min-width: 1200px){
+// styles for 1049px and up 
+@media (min-width: 1049px){
         .page-wrapper{
         flex-direction: row;      
     }
@@ -93,12 +93,12 @@ h1{
      .main-body{
         display: flex;
         flex-wrap: wrap;
-        height: 2000px; 
+        height: 2950px; 
     }
     
     .col-1{
         flex-basis: 25%;
-        height: 1750px;   
+        height: 2700px;   
     }
 
     .col-4{
@@ -110,5 +110,38 @@ h1{
         display: block;
     }
 }
+
+// 4 column 
+// styles for 1050px and up 
+@media (min-width: 1200px){
+        .page-wrapper{
+        flex-direction: row;      
+    }
+  
+    .nav-header{
+        flex-basis: 5%;       
+    }
+
+     .main-body{
+        display: flex;
+        flex-wrap: wrap;
+        height: 2950px; 
+    }
+    
+    .col-1{
+        flex-basis: 25%;
+        height: 2700px;   
+    }
+
+    .col-4{
+        flex-basis: 100%; 
+        height: 250px;     
+    }
+
+    .hide{
+        display: block;
+    }
+}
+
 
 

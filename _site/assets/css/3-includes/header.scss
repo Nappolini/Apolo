@@ -119,7 +119,7 @@
     }
 
     .vert-min{
-        margin-top: -15px;
+        margin-top: -30px;
     }
 
     .social{
@@ -139,6 +139,16 @@
 }
 
 
+
+// Styles from 1200px and up 
+@media (min-width: 1200px){
+        .header{
+        position: fixed;
+        flex-basis: 5%;
+        width: 4.75%;
+        flex-direction: column;  
+    }
+}
 
 
 
