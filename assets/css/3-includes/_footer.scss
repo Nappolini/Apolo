@@ -1,0 +1,22 @@
+.footer-wrapper{
+    display: flex;
+    background-color: red;
+    align-items: baseline;
+}
+
+.col-f-1{
+    flex-basis: 50%; 
+}
+
+.sub-form{
+    display: inline-flex;
+    height: 50px;
+}
+
+.sub-form--input{
+    height: 50px;
+}
+
+.sub-form--subcribe{
+ 
+}

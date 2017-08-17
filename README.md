@@ -20,6 +20,11 @@ The layout of the page has to be done in index.html. In the index.html file crea
 The first step is to create the layout using index.html. Block out all the content to indicate where components will go and build the reponsive functionality. 
 
 
+## Bourbon + Bourbon Base 
+
+Bourbon Base automaticly applies global styles to your content, ie buttons text and other elements. Change the styles inorder to have global syles or remove the import statement for  base/base in 0-tools dir 
+
+
 ## Changing the width of the header. 
 
 To change the width of the header you have to adjust the container in (layouts) _home-wrap.scss and in (3-includes)_header.scss. Adjust both the width and flex bassis, the Width is to reposition due to the fixed property. 
@@ -38,3 +43,4 @@ To change the width of the header you have to adjust the container in (layouts) 
 
 
 ```
+
