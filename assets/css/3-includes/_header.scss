@@ -96,7 +96,7 @@
     .header{
         position: fixed;
         flex-basis: 10%;
-        width: 9.075%;
+        width: 10%;
         flex-direction: column;  
     }
 
@@ -135,20 +135,31 @@
         height: 50px;
         border-bottom: .5px solid #333; 
         width: 100%;
+        // margin-left: -5%;
     }
 }
 
 
+@media (min-width: 800px) and (max-width: 1199px){
+    .head-line{
+  
+        width: 92%;
+        margin-left: -10%;
+    }
+}
+
 
 // Styles from 1200px and up 
 @media (min-width: 1200px){
-        .header{
+    .header{
         position: fixed;
         flex-basis: 5%;
         width: 4.75%;
+        display: flex;
         flex-direction: column;  
-    }
+        text-align: center;
 
+    }
 }
 
 

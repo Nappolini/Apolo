@@ -1,12 +1,17 @@
 .footer-wrapper
-    .col-f-1
-        h1 Say hi!
-    
-        h2: a(href="mailto:someone@example.com?Subject=Hello%20again" target="_top") contact@ap.com
-        h2 + 44 77539 - 5367 - 24
+    .col-f-75.footer-contact
+        h1.footer-contact--title Say hi!
+        h2.footer-contact--email: a(href="mailto:someone@example.com?Subject=Hello%20again" target="_top") contact@ap.com
+        h2.footer-contact--phone + 44 77539 - 5367 - 24
 
-    .col-f-1
-       h3 SUBSCRIBE NEWSLETTER 
-       form.sub-form
+    .col-f-25
+        h3 SUBSCRIBE NEWSLETTER 
+        form.sub-form
             input(type='text' placeholder='Enter Email' name='email').sub-form--input
             button.h5.sub-form--subcribe subsribe
+            
+        .footer-social
+            a(href="facebook.com" class="footer-social--hover" ) Facebook   
+            a(href="twitter.com" class="footer-social--hover" ) Twitter   
+            a(href="instagram.com" class="footer-social--hover")  Instagram 
+            

@@ -1,0 +1,24 @@
+.on-hover{
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    color: #333; 
+    opacity: 0; 
+  
+    &:hover{
+       opacity: 1; 
+    }
+}
+
+.on-hover--title{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+

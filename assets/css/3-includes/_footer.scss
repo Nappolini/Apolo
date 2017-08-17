@@ -1,22 +1,133 @@
+
+
+
 .footer-wrapper{
+    color: #333;
+    margin-top: 25px;
     display: flex;
-    background-color: red;
+    flex-wrap: wrap;
     align-items: baseline;
+    align-items: center;
+    
 }
 
-.col-f-1{
-    flex-basis: 50%; 
+.col-f-75{
+    margin-top: 15px;
+    text-align: center;
+    flex-basis: 100%;
+    align-items: baseline;
+    
 }
 
+.col-f-25{
+    margin-top: 30px; 
+    margin-bottom: 15px; 
+    text-align: center;
+    flex-basis: 100%;
+    align-items: baseline;  
+}
+
+
+.footer-contact--title{
+    font-size: 64px; 
+    color: white;
+    text-align: center;
+
+}
+
+
+.footer-contact--email{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 .sub-form{
     display: inline-flex;
-    height: 50px;
+    height: 25px;
 }
 
 .sub-form--input{
-    height: 50px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    background-color:black;
 }
 
 .sub-form--subcribe{
- 
+    height: 25px;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    background-color:black;
+    cursor: pointer;
 }
+
+
+.footer-social{
+    padding-top: 20px;
+    color: white
+}
+
+.footer-social--hover{
+    display: inline-flex;
+    padding-right: 15px;
+    &:hover{
+        color: white;
+    }
+}
+
+
+
+@media (min-width: 600px){
+    .footer-wrapper{
+        flex-wrap: nowrap;
+    }
+
+    .col-f-75{
+        margin-top: 25px;
+        text-align: left;
+        flex-basis: 80%; 
+        margin-left: 5%; 
+    }
+    
+    .col-f-25{
+        padding-top: 25px;
+        text-align: left;
+    }
+
+    .footer-contact--email{
+        padding-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    .footer-contact{
+        padding-right: -50x;
+    }
+
+    .footer-contact--title{
+        text-align: left;
+    }
+}
+
+
+
+@media (min-width: 799px){
+    .col-f-75{
+        flex-basis: 80%; 
+        margin-left: 5%; 
+    } 
+}
+
+@media (min-width: 950px){ 
+    .col-f-75{
+        flex-basis: 60%; 
+        margin-left: 5%; 
+    } 
+}
+
+@media (min-width: 1200px){
+    .col-f-75{
+        flex-basis: 30%; 
+        margin-left: 5%; 
+    }   
+ }
