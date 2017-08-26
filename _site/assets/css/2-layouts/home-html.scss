@@ -1,0 +1,61 @@
+.home-body {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap; 
+}
+
+
+// Hero modules 
+.hero{
+    display: flex;
+    flex-basis: 100%; 
+    flex-direction: column;
+}
+
+.hero--slide{
+    height: 750px;
+    flex-basis: 100%;
+}
+
+.hero--text{
+    height: 750px;
+    flex-basis: 100%; 
+}
+
+// Home gallery module 
+
+.home-gal{
+    display: flex;
+    flex-basis: 100%;
+    flex-basis: column;
+}
+.home-gal--img--col--1{
+    display: flex;
+    flex-basis: 50%; 
+    height: 500px;
+    
+}
+
+.home-gal--img--col--2{
+    display: flex;
+    flex-basis: 50%; 
+    height: 500px;
+ 
+}
+
+// .home-gal{ 
+//     display: flex;
+//     width: 100%;
+//     background-color: red;
+//     height: 250px;
+// }
+
+.home-gal--img--sm{
+    flex-basis: 100%;
+    height: 300px; 
+}
+
+.home-gal--img--md{
+    flex-basis: 100%;
+    height: 600px; 
+}
